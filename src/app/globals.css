@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-image: url('https://img.freepik.com/foto-gratis/fondo-oscuro-abstracto_1048-1920.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-body{
+  background-image: url('https://img.freepik.com/vector-gratis/fondo-oscuro-hexagonos-minimos_79603-1455.jpg?size=626&ext=jpg&ga=GA1.1.1319243779.1710892800&semt=ais');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Estilos para RAMInfo */
+.ram-info {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para Procesos */
+.procesos {
+  margin-top: 20px;
+}
+
+.procesos table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.procesos th,
+.procesos td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.procesos th {
+  background-color: #f2f2f2;
+}
+
